@@ -402,3 +402,13 @@ font-size:34px;
 }
 
 }
+.hero h1 {
+  font-size: 60px;
+  font-weight: 800;
+  text-transform: uppercase;
+
+  background: linear-gradient(90deg, #d4af37, #ffffff, #c9a227);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
