@@ -403,12 +403,122 @@ font-size:34px;
 
 }
 .hero h1 {
-  font-size: 60px;
-  font-weight: 800;
-  text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 800;
+    text-transform: uppercase;
 
-  background: linear-gradient(90deg, #d4af37, #ffffff, #c9a227);
+    background: linear-gradient(90deg, #d4af37, #ffffff, #c9a227);
 
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* FLOATING BUTTONS */
+
+.floating-call,
+.floating-zalo,
+.floating-facebook,
+.floating-tiktok{
+    position: fixed;
+    right: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    min-width: 170px;
+    height: 60px;
+
+    padding: 8px 15px;
+
+    background: #fff;
+    border-radius: 50px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,.2);
+
+    z-index: 999;
+    transition: all .3s ease;
+}
+
+/* Vị trí */
+
+.floating-call{
+    bottom: 20px;
+}
+
+.floating-zalo{
+    bottom: 90px;
+}
+
+.floating-facebook{
+    bottom: 160px;
+}
+
+.floating-tiktok{
+    bottom: 230px;
+}
+
+/* Hover */
+
+.floating-call:hover,
+.floating-zalo:hover,
+.floating-facebook:hover,
+.floating-tiktok:hover{
+    transform: translateX(-8px);
+    box-shadow: 0 10px 30px rgba(0,0,0,.3);
+}
+
+/* Icon */
+
+.floating-call img,
+.floating-zalo img,
+.floating-facebook img,
+.floating-tiktok img{
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+/* Text */
+
+.floating-call span,
+.floating-zalo span,
+.floating-facebook span,
+.floating-tiktok span{
+    font-size: 15px;
+    font-weight: 700;
+    color: #222;
+    white-space: nowrap;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .floating-call,
+    .floating-zalo,
+    .floating-facebook,
+    .floating-tiktok{
+        min-width: 140px;
+        height: 55px;
+        right: 10px;
+    }
+
+    .floating-call img,
+    .floating-zalo img,
+    .floating-facebook img,
+    .floating-tiktok img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .floating-call span,
+    .floating-zalo span,
+    .floating-facebook span,
+    .floating-tiktok span{
+        font-size: 13px;
+    }
 }
