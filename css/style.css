@@ -252,24 +252,7 @@ object-fit:cover;
 padding:25px;
 }
 
-/* GALLERY */
 
-.gallery-grid{
-columns:3;
-column-gap:20px;
-margin-top:40px;
-}
-
-.gallery-grid img{
-width:100%;
-margin-bottom:20px;
-border-radius:15px;
-transition:.3s;
-}
-
-.gallery-grid img:hover{
-transform:scale(1.02);
-}
 
 /* REVIEWS */
 
@@ -385,9 +368,6 @@ grid-template-columns:1fr;
 grid-template-columns:1fr;
 }
 
-.gallery-grid{
-columns:1;
-}
 
 nav{
 display:none;
@@ -521,4 +501,14 @@ font-size:34px;
     .floating-tiktok span{
         font-size: 13px;
     }
+}
+.btn-outline:hover{
+background:#fff;
+color:#222;
+transition:.3s;
+}
+
+.btn-outline.dark:hover{
+background:#222;
+color:#fff;
 }
